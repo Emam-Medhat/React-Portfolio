@@ -1,3 +1,10 @@
+import projectProptech from "@/assets/project-proptech.jpg";
+import projectHospital from "@/assets/project-hospital.jpg";
+import projectEcommerce from "@/assets/project-ecommerce.jpg";
+import projectErp from "@/assets/project-erp.jpg";
+import projectHr from "@/assets/project-hr.jpg";
+import projectEwan from "@/assets/project-ewan.jpg";
+
 export const profile = {
   name: "Emam Medhat",
   title: "Full-Stack Developer",
@@ -113,39 +120,45 @@ export const experience = [
 export const projects = [
   {
     title: "PropTech SaaS Platform",
-    description: "Multi-tenant property management platform with real-time features, payment integration, and advanced RBAC.",
+    description: "Multi-tenant property management platform with real-time features, payment integration, and advanced RBAC. Serving 500+ users with $100K+ monthly transactions.",
     tech: ["Laravel", "Vue.js", "Redis", "Stripe", "WebSockets"],
     category: "SaaS",
+    image: projectProptech,
   },
   {
     title: "Hospital Management System",
-    description: "Comprehensive healthcare platform with appointment scheduling, billing, patient records, and real-time dashboards.",
+    description: "Comprehensive healthcare platform with appointment scheduling, billing, patient records, and real-time operational dashboards for hospital staff.",
     tech: ["Laravel", "Vue.js", "MySQL", "WebSockets"],
     category: "Healthcare",
+    image: projectHospital,
   },
   {
     title: "E-Commerce Platform",
-    description: "Full-featured online store with Stripe payments, cart management, order tracking, and inventory control.",
+    description: "Full-featured online store with Stripe payments, cart management, order tracking, inventory control, and customer analytics dashboard.",
     tech: ["Laravel", "Vue.js", "Stripe", "Redis", "MySQL"],
     category: "E-Commerce",
+    image: projectEcommerce,
   },
   {
     title: "ERP System",
-    description: "Enterprise resource planning with HR, Inventory, Finance modules, RBAC, and comprehensive reporting.",
+    description: "Enterprise resource planning with HR, Inventory, Finance modules, role-based access control, and comprehensive reporting & analytics.",
     tech: ["Laravel", "Vue.js", "MySQL", "Bootstrap"],
     category: "Enterprise",
+    image: projectErp,
   },
   {
     title: "HR Management System",
-    description: "Payroll processing, attendance tracking, leave management, and employee performance analytics.",
+    description: "Payroll processing, attendance tracking, leave management, and employee performance analytics with automated reporting.",
     tech: ["Laravel", "Vue.js", "MySQL", "Chart.js"],
     category: "Enterprise",
+    image: projectHr,
   },
   {
     title: "EWAN Real Estate Platform",
-    description: "Digital real estate platform for the Arab world integrating AI, blockchain concepts, and modern property management.",
+    description: "Digital real estate platform for the Arab world integrating AI concepts, modern property management, IoT-ready architecture, and smart analytics.",
     tech: ["Laravel", "Vue.js", "PostgreSQL", "Redis", "Docker"],
     category: "SaaS",
+    image: projectEwan,
   },
 ];
 
@@ -153,17 +166,17 @@ export const testimonials = [
   {
     name: "Ahmed Hassan",
     role: "CTO, Kemedar LLC",
-    text: "Emam delivered exceptional work on our PropTech platform. His expertise in Laravel and Vue.js helped us build a scalable, production-ready SaaS product.",
+    text: "Emam delivered exceptional work on our PropTech platform. His expertise in Laravel and Vue.js helped us build a scalable, production-ready SaaS product that handles thousands of users effortlessly.",
   },
   {
     name: "Sara Al-Rashid",
     role: "Project Manager, Kawkaba Tech",
-    text: "Outstanding developer with deep understanding of complex healthcare systems. Delivered on time with clean, maintainable code.",
+    text: "Outstanding developer with deep understanding of complex healthcare systems. Delivered on time with clean, maintainable code and excellent communication throughout the project.",
   },
   {
     name: "Mohamed Farid",
     role: "CEO, Infosas",
-    text: "Emam's ability to architect ERP systems from scratch is remarkable. He transformed our business processes with elegant solutions.",
+    text: "Emam's ability to architect ERP systems from scratch is remarkable. He transformed our business processes with elegant solutions and his attention to detail is second to none.",
   },
 ];
 
