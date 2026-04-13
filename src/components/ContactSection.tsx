@@ -31,8 +31,8 @@ export default function ContactSection() {
                 </div>
               </div>
               <div className="mt-8 flex gap-4">
-                <a href={profile.github} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"><Github size={18} /></a>
-                <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"><Linkedin size={18} /></a>
+                <a href={profile.github} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"><GithubIcon size={18} /></a>
+                <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"><LinkedinIcon size={18} /></a>
               </div>
             </div>
             <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="glass-card space-y-4 rounded-xl p-6">
