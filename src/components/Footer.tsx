@@ -1,5 +1,6 @@
 import { profile } from "@/data/portfolio";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 
 export default function Footer() {
   return (
