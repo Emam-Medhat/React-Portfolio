@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 import { profile, stats } from "@/data/portfolio";
 
 export default function HeroSection() {
@@ -21,8 +22,8 @@ export default function HeroSection() {
             <a href="/Emam_Medhat_FullStack_Developer.pdf" download className="rounded-xl border border-border px-8 py-3 font-semibold text-foreground transition-all hover:bg-secondary">Download CV</a>
           </div>
           <div className="mb-10 flex items-center justify-center gap-5">
-            <a href={profile.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary"><Github size={22} /></a>
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary"><Linkedin size={22} /></a>
+            <a href={profile.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary"><GithubIcon size={22} /></a>
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary"><LinkedinIcon size={22} /></a>
             <a href={`mailto:${profile.email}`} className="text-muted-foreground transition-colors hover:text-primary"><Mail size={22} /></a>
           </div>
         </motion.div>
