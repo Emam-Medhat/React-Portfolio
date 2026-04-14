@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "../context/LanguageContext";
 
 // ─── Tech data with real brand colors & SVG icons ──────────────
 const techs = [

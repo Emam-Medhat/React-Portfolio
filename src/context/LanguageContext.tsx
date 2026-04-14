@@ -42,6 +42,13 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = language;
     localStorage.setItem('app-language', language);
+
+    // Toggle font class on body
+    if (language === 'ar') {
+      document.body.classList.add('font-arabic');
+    } else {
+      document.body.classList.remove('font-arabic');
+    }
   }, [language]);
 
   const toggleLanguage = () => {
@@ -122,9 +129,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage, t, isRtl }}>
-      <div dir={isRtl ? 'rtl' : 'ltr'} className={isRtl ? 'font-arabic' : ''}>
-        {children}
-      </div>
+      {children}
     </LanguageContext.Provider>
   );
 };
