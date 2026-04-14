@@ -42,7 +42,7 @@ export default function SkillsSection() {
           </h3>
           <div className="grid gap-8 md:grid-cols-2">
             {Object.values(currentSkills).map((category) => (
-              <div key={category.title} className={`glass-card rounded-2xl p-8 transition-all hover:glow-primary ${isRtl ? 'text-right' : 'text-left'}`}>
+              <div key={category.title} className={`glass-card-hover rounded-2xl p-8 transition-all ${isRtl ? 'text-right' : 'text-left'}`}>
                 <h4 className="mb-6 text-xl font-bold text-primary md:text-2xl">{category.title}</h4>
                 {category.items.map((skill, i) => (
                   <SkillBar key={skill.name} name={skill.name} level={skill.level} delay={i * 0.1} isRtl={isRtl} />

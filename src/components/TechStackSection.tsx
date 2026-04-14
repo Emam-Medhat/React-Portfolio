@@ -145,31 +145,15 @@ const techs = [
   },
 ];
 
-// ─── Infinite Marquee Row ─────────────────────────────────────
-function MarqueeRow({ items, reverse = false, speed = 35 }: {
+// ─── Static Grid Row ─────────────────────────────────────
+function StaticGridRow({ items }: {
   items: typeof techs;
-  reverse?: boolean;
-  speed?: number;
 }) {
-  const doubled = [...items, ...items];
-
   return (
-    <div className="overflow-hidden py-3" style={{ maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)" }}>
-      <motion.div
-        className="flex gap-4"
-        animate={{ x: reverse ? ["0%", "50%"] : ["0%", "-50%"] }}
-        transition={{
-          duration: speed,
-          repeat: Infinity,
-          ease: "linear",
-          repeatType: "loop",
-        }}
-        style={{ width: "max-content" }}
-      >
-        {doubled.map((tech, i) => (
-          <TechCard key={i} tech={tech} index={i} />
-        ))}
-      </motion.div>
+    <div className="grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8">
+      {items.map((tech, i) => (
+        <TechCard key={i} tech={tech} index={i} />
+      ))}
     </div>
   );
 }
@@ -216,7 +200,7 @@ function TechCard({ tech, index }: { tech: typeof techs[0]; index: number }) {
 
 // ─── Main Section ─────────────────────────────────────────────
 const row1 = techs.slice(0, 8);
-const row2 = techs.slice(7);
+const row2 = techs.slice(8);
 
 export default function TechStackSection() {
   const { t, language, isRtl } = useLanguage();
@@ -226,7 +210,7 @@ export default function TechStackSection() {
       {/* Background decoration */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[140px]"
-          style={{ background: "oklch(0.6 0.2 260 / 5%)" }}
+          style={{ background: "oklch(0.68 0.22 280 / 6%)" }}
         />
       </div>
 
@@ -258,16 +242,16 @@ export default function TechStackSection() {
         </motion.div>
       </div>
 
-      {/* Marquee rows */}
+      {/* Static grid rows */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="space-y-4"
+        className="space-y-6"
       >
-        <MarqueeRow items={row1} speed={30} />
-        <MarqueeRow items={row2} reverse speed={38} />
+        <StaticGridRow items={row1} />
+        <StaticGridRow items={row2} />
       </motion.div>
 
       {/* Count badge */}

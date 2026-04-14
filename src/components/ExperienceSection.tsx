@@ -33,7 +33,7 @@ export default function ExperienceSection() {
                 className={`relative mb-14 last:mb-0 ${isRtl ? 'text-right' : 'text-left'}`}
               >
                 <div className={`absolute top-2 h-5 w-5 rounded-full border-3 border-primary bg-background ${isRtl ? '-right-[51px]' : '-left-[51px]'}`} />
-                <div className="glass-card rounded-2xl p-8 transition-all hover:glow-primary">
+                <div className="glass-card-hover rounded-2xl p-8 transition-all">
                   <h4 className="text-2xl font-bold text-foreground">{exp.role}</h4>
                   <p className="mt-2 text-xl font-semibold text-primary">{exp.company}</p>
                   <div className={`mt-3 flex flex-wrap gap-5 text-sm text-muted-foreground md:text-base ${isRtl ? 'flex-row-reverse' : ''}`}>

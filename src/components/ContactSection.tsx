@@ -56,7 +56,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="glass-card space-y-5 rounded-2xl p-8">
+            <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="glass-card-hover space-y-5 rounded-2xl p-8">
               {sent ? (
                 <div className="flex h-full min-h-[300px] items-center justify-center text-center">
                   <div>
@@ -73,7 +73,7 @@ export default function ContactSection() {
                   <input type="email" placeholder={t("contact.email")} required className={`w-full rounded-xl bg-input px-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary ${isRtl ? 'text-right' : 'text-left'}`} />
                   <input type="text" placeholder={t("contact.subject")} className={`w-full rounded-xl bg-input px-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary ${isRtl ? 'text-right' : 'text-left'}`} />
                   <textarea placeholder={t("contact.message")} rows={5} required className={`w-full rounded-xl bg-input px-5 py-4 text-base text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none ${isRtl ? 'text-right' : 'text-left'}`} />
-                  <button type="submit" className={`flex w-full items-center justify-center gap-3 rounded-xl bg-primary py-4 text-lg font-bold text-primary-foreground transition-all hover:scale-[1.02] hover:glow-primary ${isRtl ? 'flex-row-reverse' : ''}`}>
+                  <button type="submit" className={`flex w-full items-center justify-center gap-3 rounded-xl bg-primary py-4 text-lg font-bold text-primary-foreground transition-all hover:scale-[1.02] hover-lift ${isRtl ? 'flex-row-reverse' : ''}`}>
                     <Send size={20} className={isRtl ? 'rotate-180' : ''} /> {t("contact.send")}
                   </button>
                 </>

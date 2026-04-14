@@ -148,7 +148,7 @@ function MouseGlow() {
         left: springX,
         top: springY,
         background:
-          "radial-gradient(circle, oklch(0.6 0.2 260 / 8%) 0%, transparent 70%)",
+          "radial-gradient(circle, oklch(0.68 0.22 280 / 10%) 0%, transparent 70%)",
       }}
     />
   );
@@ -240,19 +240,19 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute inset-0">
         <motion.div
           className="absolute left-1/4 top-1/4 h-[600px] w-[600px] rounded-full blur-[120px]"
-          style={{ background: "oklch(0.6 0.2 260 / 10%)" }}
+          style={{ background: "oklch(0.68 0.22 280 / 12%)" }}
           animate={{ scale: [1, 1.15, 1], opacity: [0.4, 0.7, 0.4] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
           className="absolute bottom-1/4 right-1/4 h-[500px] w-[500px] rounded-full blur-[100px]"
-          style={{ background: "oklch(0.65 0.18 200 / 8%)" }}
+          style={{ background: "oklch(0.72 0.2 200 / 10%)" }}
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         />
         <motion.div
           className="absolute right-1/3 top-2/3 h-[300px] w-[300px] rounded-full blur-[80px]"
-          style={{ background: "oklch(0.6 0.2 260 / 6%)" }}
+          style={{ background: "oklch(0.68 0.22 280 / 8%)" }}
           animate={{ scale: [1, 1.3, 1] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         />
@@ -275,7 +275,7 @@ export default function HeroSection() {
                 <motion.div 
                   className="relative h-32 w-32 md:h-36 md:w-36 rounded-full border-4 border-background overflow-hidden shrink-0"
                   style={{
-                    boxShadow: "0 0 30px oklch(0.6 0.2 260 / 30%), inset 0 0 0 2px oklch(0.6 0.2 260 / 50%)"
+                    boxShadow: "0 0 40px oklch(0.68 0.22 280 / 35%), inset 0 0 0 2px oklch(0.68 0.22 280 / 50%)"
                   }}
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -293,7 +293,7 @@ export default function HeroSection() {
                 <motion.div variants={itemVariants} className="mb-3">
                   <motion.span
                     className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-primary uppercase backdrop-blur-sm"
-                    whileHover={{ scale: 1.05, borderColor: "oklch(0.6 0.2 260 / 60%)" }}
+                    whileHover={{ scale: 1.05, borderColor: "oklch(0.68 0.22 280 / 60%)" }}
                   >
                     <motion.span animate={{ rotate: [0, 15, -15, 0] }} transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}>
                       <Sparkles size={14} />
@@ -320,7 +320,7 @@ export default function HeroSection() {
                   <motion.span
                     className="absolute -bottom-1 left-0 h-[3px] rounded-full"
                     style={{
-                      background: "linear-gradient(90deg, oklch(0.6 0.2 260), oklch(0.65 0.18 200), oklch(0.6 0.2 260))",
+                      background: "linear-gradient(90deg, oklch(0.68 0.22 280), oklch(0.72 0.2 200), oklch(0.68 0.22 280))",
                       backgroundSize: "200% 100%",
                       width: "100%",
                     }}
@@ -364,7 +364,7 @@ export default function HeroSection() {
                 className="group relative overflow-hidden rounded-2xl bg-primary px-8 py-3.5 text-lg font-bold text-primary-foreground shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
-                style={{ boxShadow: "0 0 30px oklch(0.6 0.2 260 / 25%)" }}
+                style={{ boxShadow: "0 0 40px oklch(0.68 0.22 280 / 30%)" }}
               >
                 <motion.span className="absolute inset-0 -skew-x-12 bg-white/20" initial={{ x: "-150%" }} whileHover={{ x: "200%" }} transition={{ duration: 0.55 }} />
                 <span className="relative flex items-center gap-2">
@@ -454,7 +454,7 @@ export default function HeroSection() {
           <span className="text-xs font-medium tracking-widest uppercase">{t("hero.scroll")}</span>
           <motion.div
             className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-current p-1"
-            whileHover={{ borderColor: "oklch(0.6 0.2 260)" }}
+            whileHover={{ borderColor: "oklch(0.68 0.22 280)" }}
           >
             <motion.div
               className="h-2 w-1 rounded-full bg-current"

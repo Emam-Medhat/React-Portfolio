@@ -22,9 +22,9 @@ export default function Footer() {
           © {new Date().getFullYear()} {currentProfile.name}. {language === 'en' ? 'All rights reserved.' : 'جميع الحقوق محفوظة.'}
         </p>
         <div className="flex gap-4">
-          <a href={currentProfile.github} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"><GithubIcon size={18} /></a>
-          <a href={currentProfile.linkedin} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"><LinkedinIcon size={18} /></a>
-          <a href={`mailto:${currentProfile.email}`} className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"><Mail size={18} /></a>
+          <a href={currentProfile.github} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all hover-lift"><GithubIcon size={18} /></a>
+          <a href={currentProfile.linkedin} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all hover-lift"><LinkedinIcon size={18} /></a>
+          <a href={`mailto:${currentProfile.email}`} className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all hover-lift"><Mail size={18} /></a>
         </div>
       </div>
     </footer>

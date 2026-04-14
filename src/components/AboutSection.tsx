@@ -67,7 +67,7 @@ export default function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }} 
                   viewport={{ once: true }} 
                   transition={{ delay: i * 0.1 }} 
-                  className="glass-card flex flex-col items-center justify-center rounded-2xl p-8 text-center transition-all hover:scale-105 hover:glow-primary"
+                  className="glass-card-hover flex flex-col items-center justify-center rounded-2xl p-8 text-center transition-all hover:scale-105"
                 >
                   <h.icon className="mb-4 text-primary" size={36} />
                   <p className="text-base font-bold text-foreground">{h.label}</p>

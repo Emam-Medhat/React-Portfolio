@@ -24,7 +24,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-card py-3" : "py-5"}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-card-hover py-3" : "py-5"}`}>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6">
         <a href="#" className="text-xl font-bold gradient-text">EM</a>
         
@@ -45,7 +45,7 @@ export default function Navbar() {
               <Globe size={14} />
               {language === "en" ? "العربية" : "English"}
             </button>
-            <a href="/Emam_Medhat_FullStack_Developer.pdf" download className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:glow-primary">
+            <a href="/Emam_Medhat_FullStack_Developer.pdf" download className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:glow-primary hover-lift">
               <Download size={14} /> {t("hero.downloadCv")}
             </a>
           </div>

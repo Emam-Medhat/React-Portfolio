@@ -67,7 +67,7 @@ export default function ProjectsSection() {
                   animate={{ opacity: 1, scale: 1 }} 
                   exit={{ opacity: 0, scale: 0.9 }} 
                   transition={{ duration: 0.35 }} 
-                  className={`glass-card group overflow-hidden rounded-2xl transition-all hover:scale-[1.03] hover:glow-primary ${isRtl ? 'text-right' : 'text-left'}`}
+                  className={`glass-card-hover group overflow-hidden rounded-2xl transition-all hover:scale-[1.03] ${isRtl ? 'text-right' : 'text-left'}`}
                 >
                   <div className="relative overflow-hidden">
                     <img src={project.image} alt={project.title} loading="lazy" width={800} height={512} className="h-52 w-full object-cover transition-transform duration-500 group-hover:scale-110" />

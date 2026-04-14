@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
                 whileInView={{ opacity: 1, y: 0 }} 
                 viewport={{ once: true }} 
                 transition={{ delay: i * 0.15, duration: 0.5 }} 
-                className={`glass-card rounded-2xl p-8 transition-all hover:scale-105 hover:glow-primary ${isRtl ? 'text-right' : 'text-left'}`}
+                className={`glass-card-hover rounded-2xl p-8 transition-all hover:scale-105 ${isRtl ? 'text-right' : 'text-left'}`}
               >
                 <Quote className={`mb-5 text-primary/40 ${isRtl ? 'rotate-180' : ''}`} size={36} />
                 <div className={`mb-5 flex gap-1 ${isRtl ? 'flex-row-reverse' : ''}`}>
